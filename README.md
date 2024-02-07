@@ -1,8 +1,7 @@
-# React + Vite
+# Book an Imam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/317f14ca-f676-4926-9f7b-c826a6472b0f/deploy-status)](https://app.netlify.com/sites/bookanimam/deploys)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is modelled after: https://www.bookamagician.com/
