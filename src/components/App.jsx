@@ -1,6 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
-import Search from './Search';
+import Imams from './Imams';
 import Faq from './Faq';
 
 function App() {
@@ -8,10 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Search />
-      <h1>
-        The grid of imams goes here
-      </h1>
+      <Imams />
       <Faq />
     </div>
   )
