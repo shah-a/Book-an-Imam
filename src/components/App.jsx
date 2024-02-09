@@ -5,7 +5,7 @@ import Faq from './Faq';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-5xl mx-auto">
       <Header />
       <Hero />
       <Imams />
