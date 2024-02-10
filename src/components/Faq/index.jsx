@@ -1,5 +1,11 @@
 import { useState } from 'react';
 
+/*
+ * Note: This needs to be fixed properly for viewport responsiveness.
+ * Currently it works, but it's hard-coded to work with 6 questions
+ * and I think the implementation is sloppy.
+ */
+
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
 
