@@ -17,7 +17,7 @@ function Faq() {
   };
 
   return (
-    <section className="Faq pb-3">
+    <section className="Faq py-20">
       <h2 className="text-2xl mb-3">Frequently Asked Questions</h2>
       <div className="faq-container md:flex md:flex-row md:justify-between md:space-y-0 space-y-3">
         <div className="faq-column flex-1 space-y-3 md:mr-3">
@@ -26,17 +26,17 @@ function Faq() {
               <div className="faq-question cursor-pointer flex justify-between items-center" onClick={() => toggleFaq(index)}>
                 {faq.question} <span>{activeIndex === index ? '▲' : '▼'}</span>
               </div>
-              {activeIndex === index && <div className="faq-answer mt-2">{faq.answer}</div>}
+              {activeIndex === index && <div className="faq-answer mt-2 text-stone-400">{faq.answer}</div>}
             </div>
           ))}
         </div>
         <div className="faq-column flex-1 space-y-3">
           {faqData.slice(3, 6).map((faq, index) => (
             <div key={index + 3} className="faq-item">
-              <div className="faq-question cursor-pointer flex justify-between items-center" onClick={() => toggleFaq(index + 3)}>
+              <div className="faq-question cursor-pointer flex justify-between items-center " onClick={() => toggleFaq(index + 3)}>
                 {faq.question} <span>{activeIndex === index + 3 ? '▲' : '▼'}</span>
               </div>
-              {activeIndex === index + 3 && <div className="faq-answer mt-2">{faq.answer}</div>}
+              {activeIndex === index + 3 && <div className="faq-answer mt-2 text-stone-400">{faq.answer}</div>}
             </div>
           ))}
         </div>
