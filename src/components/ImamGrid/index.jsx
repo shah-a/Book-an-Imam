@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import ImamCard from '../ImamCard';
 import imamImage from '../../assets/imam.png';
 
 function ImamGrid() {
+  const [searchQuery, setSearchQuery] = useState('');
+
   const imams = [
     { id: 1, name: 'Zayd Amin', image: imamImage, description: 'Expert in family counseling.' },
     { id: 2, name: 'Samir Al-Fayed', image: imamImage, description: 'Renowned Quranic teacher.' },
@@ -14,11 +17,22 @@ function ImamGrid() {
     { id: 9, name: 'Yasir Majid', image: imamImage, description: 'Pioneer in educational reform and spiritual guidance.' },
   ];
 
+  const filteredImams = imams.filter(imam =>
+    imam.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    imam.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="ImamGrid container mx-auto space-y-3">
-      <h1 className="text-center text-2xl">The search bar goes here</h1>
+      <input
+        type="text"
+        className="w-full p-3 rounded shadow shadow-stone-400 text-black"
+        placeholder="Search imams..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-items-center">
-        {imams.map((imam) => (
+        {filteredImams.map((imam) => (
           <ImamCard key={imam.id} name={imam.name} image={imam.image} description={imam.description} />
         ))}
       </div>
