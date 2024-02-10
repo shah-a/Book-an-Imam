@@ -1,6 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
-import Imams from './Imams';
+import ImamGrid from './ImamGrid';
 import Faq from './Faq';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App max-w-5xl mx-auto px-3 space-y-5">
       <Header />
       <Hero />
-      <Imams />
+      <ImamGrid />
       <Faq />
     </div>
   )
