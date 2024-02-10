@@ -1,13 +1,13 @@
 function Header() {
   return (
-    <header className="Header py-10 flex justify-between">
+    <header className="Header py-10 flex justify-between items-center">
       <h1 className="text-2xl">
         Book an Imam
       </h1>
       <nav>
-        <a href="#" className="p-2 hover:text-indigo-500">Link 1</a>
-        <a href="#" className="p-2 hover:text-indigo-500">Link 2</a>
-        <a href="#" className="p-2 hover:text-indigo-500">Link 3</a>
+        <a href="#" className="p-2 hover:text-indigo-500">Khutbah</a>
+        <a href="#" className="p-2 hover:text-indigo-500">Nikkah</a>
+        <a href="#" className="p-2 hover:text-indigo-500">Consultation</a>
       </nav>
     </header>
   );
