@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="Header p-10 flex justify-between">
+    <header className="Header py-10 flex justify-between">
       <h1 className="text-2xl">
         Book an Imam
       </h1>
