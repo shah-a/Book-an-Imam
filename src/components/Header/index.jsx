@@ -4,7 +4,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="Header mt-5 flex justify-between items-center">
+    <header className="Header pt-3 flex justify-between items-center">
       <h1 className="text-2xl font-bold">
         <a href="/">Book an Imam</a>
       </h1>

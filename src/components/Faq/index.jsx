@@ -17,7 +17,7 @@ function Faq() {
   };
 
   return (
-    <section className="Faq">
+    <section className="Faq pb-3">
       <h2 className="text-2xl mb-3">Frequently Asked Questions</h2>
       <div className="faq-container md:flex md:flex-row md:justify-between md:space-y-0 space-y-3">
         <div className="faq-column flex-1 space-y-3 md:mr-3">
