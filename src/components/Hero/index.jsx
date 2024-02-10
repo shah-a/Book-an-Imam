@@ -1,8 +1,10 @@
 function Hero() {
   return (
-    <h1 className="Hero">
-      I am the hero section
-    </h1>
+    <div className="Hero max-w-lg mx-auto text-center space-y-3 h-64">
+      <h1 className="text-5xl">Hire Local Imams for Your Event</h1>
+      <h2 className="text-2xl">The #1 Imam Near Me Directory</h2>
+      <h3 className="text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ratione, ut quo laborum et corporis.</h3>
+    </div>
   );
 }
 
