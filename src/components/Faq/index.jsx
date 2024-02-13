@@ -21,7 +21,7 @@ function Faq() {
       <h2 className="text-2xl mb-4">Frequently Asked Questions</h2>
       <div className="faq-container grid grid-cols-1 md:grid-cols-2 gap-4">
         {faqData.map((faq, index) => (
-          <div key={index} className="faq-item">
+          <div key={index} className="faq-item pb-3 border-b border-stone-400">
             <div className="faq-question cursor-pointer flex justify-between items-center" onClick={() => toggleFaq(index)}>
               {faq.question} <span>{activeIndex === index ? '▲' : '▼'}</span>
             </div>
